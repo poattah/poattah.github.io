@@ -1,0 +1,1338 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Be Vietnam', sans-serif;
+ */
+
+*/ html,
+body {
+    height: 100%;
+    padding: 0px;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:focus,
+input:focus,
+button:focus,
+textarea:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: normal;
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+a,
+input,
+button,
+select,
+textarea {
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+    padding: 0;
+}
+
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.pos_rel {
+    position: relative;
+}
+
+.pos_abs {
+    position: absolute;
+}
+
+.section_padding {
+    padding: 80px 0;
+}
+
+.section_title {
+    margin-bottom: 50px;
+}
+
+.section_title h2 {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 400;
+}
+
+.section_title p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.cover_bg {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay:after {
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+
+.hide {
+    display: none !IMPORTANT;
+}
+
+@keyframes next_section {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    90% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+
+
+/*==============================================================================================
+                                              Base css
+================================================================================================*/
+
+/*----------------------------
+       Hero area Start
+-----------------------------*/
+
+.wraper {
+    transition: .5s;
+    position: relative;
+}
+
+.wraper.show {
+    margin-left: -200px;
+}
+
+.Black_shadow {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.wraper.show .Black_shadow {
+    opacity: .5;
+    visibility: visible;
+}
+
+
+.hero_area {
+    min-height: 100vh;
+    color: #000;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+
+.hero_area img {
+    max-height: 365px;
+    margin-bottom: 20px;
+}
+
+.hero_text p {
+    font-size: 18px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.hero_button {
+    margin-top: 10px;
+}
+
+.custom_btn {
+    color: #000;
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 15px;
+    border-radius: 20px;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+.custom_btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/*----------------------------
+       Hero area end
+-----------------------------*/
+
+
+
+/*----------------------------
+   side menu start
+-----------------------------*/
+
+.side_menu {
+    background-color: #fff;
+    width: auto;
+    height: 100vh;
+    top: 0;
+    right: -200px;
+    z-index: 100;
+    transition: .7s;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile_logo img {
+    height: 45px;
+    width: auto;
+}
+
+.side_menu_area.show .side_menu {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    text-transform: capitalize;
+}
+
+.side_menu ul {
+    margin-top: 150px;
+    width: 180px;
+    float: right;
+}
+
+.side_menu ul li {
+    padding: 5px 15px;
+}
+
+.side_menu ul li a {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    transition: .7s;
+}
+
+.side_menu ul li a.menu_item_1 {
+    padding-left: 50px;
+}
+
+.side_menu ul li a.menu_item_2 {
+    padding-left: 100px;
+}
+
+.side_menu ul li a.menu_item_3 {
+    padding-left: 200px;
+}
+
+.side_menu_area.show .side_menu ul li a.menu_item_1,
+.side_menu_area.show .side_menu ul li a.menu_item_2,
+.side_menu_area.show .side_menu ul li a.menu_item_3 {
+    padding-left: 0;
+}
+
+.side_menu ul li a.menu_item_1.active {
+    color: #006CFA;
+}
+
+.side_menu ul li a.menu_item_2.active {
+    color: #006CFA;
+}
+
+.side_menu ul li a.menu_item_3.active {
+    color: #006CFA;
+}
+
+
+
+.side_menu ul li span {
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+
+.side_menu ul li a.menu_item_1:hover {
+    color: #9B9BA5;
+}
+
+.side_menu ul li a.menu_item_2:hover {
+    color: #9B9BA5;
+}
+
+.side_menu ul li a.menu_item_3:hover {
+    color: #9B9BA5;
+}
+
+.side_menu ul li a:hover span {
+    background-color: #000;
+}
+
+.side_menu_on {
+    top: 40px;
+    z-index: 101;
+    position: absolute;
+    right: 40px;
+}
+
+.side_menu_btn {
+    color: #000;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.mobile_logo {
+    width: 150px;
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.side_menu_btn {
+    transition: .5s;
+    height: 18px;
+    width: 32px;
+    position: absolute;
+    top: 13px;
+    right: 17px;
+}
+
+.side_menu_btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transition: .3s;
+}
+
+.side_menu_btn span.bar_2 {
+    top: 0px;
+}
+
+.side_menu_btn span.bar_2 {
+    top: 7px;
+}
+
+.side_menu_btn span.bar_3 {
+    top: 15px;
+}
+
+.side_menu_area.show .bar_2 {
+    display: none;
+}
+
+.side_menu_area.show .bar_1 {
+    transform: rotate(45deg);
+    top: 7px;
+}
+
+.side_menu_area.show .bar_3 {
+    transform: rotate(-45deg);
+    top: 7px;
+}
+
+/*----------------------------
+      side menu end
+-----------------------------*/
+
+
+
+/*----------------------------
+      about page start
+-----------------------------*/
+.about {
+    padding-top: 130px;
+}
+
+.about_image img {
+    margin-bottom: 30px;
+    padding-right: 60px;
+}
+
+.about_text p {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 13.6px;
+    font-family: 'Be Vietnam', sans-serif;
+    line-height: normal;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: -1px;
+    text-align: justify;
+}
+
+.social_icons {
+    margin-top: 20px;
+}
+
+
+.social_icons ul li {
+    display: inline-flex;
+}
+
+.social_icons ul li a {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px;
+    transition: .5s;
+}
+
+.social_icons ul li a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+.about_bottom_button {
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+/*----------------------------
+      about page end
+-----------------------------*/
+
+
+/*----------------------------
+        work page Start
+-----------------------------*/
+
+.work .section_title,
+.work .section_title h2 {
+    margin-bottom: 20px;
+}
+
+.work {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 130px;
+    transition: .5s;
+}
+
+.work_header {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.work_menu {
+    text-align: right;
+}
+
+.work_menu li {
+    color: #000;
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize;
+    margin-top: -5px;
+}
+
+.work_menu li:last-child {
+    margin-right: 0px;
+}
+
+.work_menu li.active {
+    color: #006CFA;
+}
+
+.work_menu li.active:after {
+    display: none;
+}
+
+.work_wrapper {
+    width: 100%;
+    margin-top: 75px;
+}
+
+.work_area {
+    min-height: 730px;
+}
+
+.single_work_item {
+    text-align: center;
+    width: 29.6%;
+    margin: 15px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.single_work_item a {
+    width: 160px;
+    margin: 0 auto;
+    height: 195px;
+    position: relative;
+    display: inline-block;
+    -webkit-animation: zoomIn;
+    -webkit-animation-duration: .9s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.work_image_area {
+
+    height: 160px;
+    transition: .5s;
+    width: 100%;
+    line-height: 160px;
+    border-radius: 35px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work_image_area img {
+    height: 76px;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    left: 43px;
+    transition: .5s;
+}
+
+.work_item_2 .work_image_area img {
+    left: 52px;
+}
+
+.work_item_3 .work_image_area img {
+    left: 46px;
+}
+
+.single_work_item a span {
+    position: absolute;
+    bottom: 0;
+    left: -300px;
+    transition: .5s;
+    color: #000;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.single_work_item a:hover span {
+    left: 0px;
+}
+
+.work_image_area img.back_images {
+    top: -100px;
+}
+
+.single_work_item a:hover img.back_images {
+    top: 40px;
+}
+
+.single_work_item a:hover img.front_images {
+    top: 170px;
+}
+
+.work_item_1 a:hover .work_image_area {
+    border-color: #AA382C;
+}
+
+.work_item_2 a:hover .work_image_area {
+    border-color: #57C478;
+}
+
+.work_item_3 a:hover .work_image_area {
+    border-color: #57C478;
+}
+
+.work_item_4 a:hover .work_image_area {
+    border-color: #AA382C;
+}
+
+.work_item_5 a:hover .work_image_area {
+    border-color: #5876A1;
+}
+
+.work_item_6 a:hover .work_image_area {
+    border-color: #F2C617;
+}
+
+
+/*=========================
+        Portfolio end
+===========================*/
+
+
+/*option pages start*/
+.wraper.zoom_out .work {
+    transform: scale(.9);
+    height: auto;
+}
+
+.wraper.zoom_out .work_wrapper {
+    height: 425px !IMPORTANT;
+}
+
+.opton_1,
+.opton_2,
+.opton_3,
+.opton_4,
+.opton_5,
+.opton_6 {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+    z-index: 102;
+    visibility: hidden;
+}
+
+.opton_1.open_1,
+.opton_2.open_2,
+.opton_3.open_3,
+.opton_4.open_4,
+.opton_5.open_5,
+.opton_6.open_6 {
+    top: 0;
+    visibility: visible;
+}
+
+.close_btn img {
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    height: 50px;
+    z-index: 2;
+}
+
+/*option pages end*/
+
+
+/*--------opton 1 start----------*/
+
+.bg_img_1 {
+    background-image: url(../images/option_1_images/socarp-header-img.jpg);
+}
+
+.option_section_padding {
+    padding: 120px 0;
+}
+
+.single_option h2 {
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.single_option h3 {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 25.6px;
+    color: #000;
+    font-weight: 100;
+}
+
+.single_option p {
+    color: #000;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.single_option .header {
+    height: 100vh;
+}
+
+.single_option .header .text_area {
+    text-align: right;
+    position: absolute;
+    width: auto;
+    bottom: 100px;
+    right: 50px;
+}
+
+.single_option .header .text_area h2,
+.single_option .header .text_area h3 {
+        font-family: 'Be Vietnam', sans-serif;
+    margin: 0;
+}
+
+.single_option .header .text_area h3 {
+    color: #cc4435;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.single_option .header .text_area h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.single_option .header .image_area img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.top_to_bottom {
+    border: 1px solid #000;
+    height: 32px;
+    width: 20px;
+    border-radius: 10px;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -8px;
+}
+
+.top_to_bottom a {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -14px;
+    text-align: center;
+    animation: next_section;
+    -webkit-animation: next_section;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    height: 60px;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.top_to_bottom span {
+    background-color: #000;
+    height: 10px;
+    width: 10px;
+    display: block;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+/*opton_1_section_1 start*/
+
+.opton_1_section_1 {
+    min-height: 100vh;
+    background-color: #ECECEC;
+}
+
+.option_section_title h2 {
+    font-size: 31px;
+    ;
+    color: #cc4435;
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+}
+
+.opton_1_section_1 p {
+    color: #000;
+    font-size: 16px;
+    line-height: 28.8px;
+}
+
+.opton_1_section_1 .two_section {
+    margin-top: 140px;
+}
+
+.opton_1_section_1 .two_section h3 {
+    color: #000;
+}
+
+.opton_1_section_1 .two_section p {
+    margin-bottom: 20px;
+}
+
+.opton_1_section_1 .two_section .left {
+    padding-right: 57px;
+}
+
+.opton_1_section_1 .two_section .right {
+    padding-left: 57px;
+}
+
+/*opton_1_section_1 end*/
+
+/*opton_1_section_2*/
+.opton_1_section_2 {
+    background-color: #fff;
+}
+
+.opton_1_section_2 .left {
+    max-width: 350px;
+}
+
+.opton_1_section_2 .left p {
+    font-size: 12.8px;
+}
+
+
+/*.opton_1_section_3*/
+.opton_1_section_3 {
+    min-height: 100vh;
+    background-color: #CCCCCC;
+}
+
+
+.opton_1_section_3 .single_box {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.opton_1_section_3 .single_box .images {
+    height: 242px;
+    text-align: center;
+    align-items: flex-end;
+    display: flex;
+    padding: 30px;
+}
+
+.opton_1_section_3 .single_box p {
+    text-align: center;
+}
+
+.opton_1_section_3 .single_box span {
+    display: block;
+    color: #cc4435;
+    font-size: 12.4;
+    font-family: 'Be Vietnam', sans-serif;
+    line-height: 24px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.opton_1_section_3 .single_box.box_3 span {
+    color: #57c478;
+}
+
+.opton_1_section_3 .icon_img img {
+    height: 30px;
+    width: 30px;
+}
+
+/*opton_1_section_4*/
+.opton_1_section_4 {
+    background-color: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+
+.opton_1_section_4_bg {
+    background-image: url(../images/option_1_images/socarp-system-design-new-img.png);
+    height: 100vh;
+
+}
+
+.opton_1_section_4 .text_area {
+    width: 260px;
+    position: absolute;
+    bottom: 100px;
+    right: 125px;
+}
+
+.opton_1_section_4 .text_area h3 {
+    font-weight: 300;
+}
+
+/*opton_1_section_5*/
+.opton_1_section_5 {
+    background-color: #ccc;
+    min-height: 100vh;
+}
+
+.opton_1_section_5 .top_area img {
+    margin-bottom: 100px;
+}
+
+.opton_1_section_5 .text_area {
+    max-width: 405px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.opton_1_section_5 .bottom_area h3 {
+    color: #cc4435;
+}
+
+.opton_1_section_5 .bottom_area p {
+    color: #000;
+
+}
+
+.opton_1_section_5 .bottom_area img {
+    margin-bottom: 150px;
+}
+
+/*opton_1_section_6*/
+.opton_1_section_6 {
+    background-color: #fff;
+}
+
+.i_phone_area {
+    position: relative;
+    height: 815px;
+    width: 378px;
+    margin: 0 auto;
+}
+
+.i_phone_area img {
+    position: absolute;
+}
+
+.phone_frame {
+    top: 0;
+    left: 0;
+}
+
+.phone_screen {
+    top: 96px;
+    left: 31px;
+    border-radius: 3px;
+    width: 318px;
+    height: 566px;
+}
+
+.single_phone_box .text_area {
+    text-align: center;
+    max-width: 378px;
+    margin: 0 auto;
+}
+
+.single_phone_box .text_area h4 {
+    color: #212934;
+    font-size: 12px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.single_phone_box .text_area p {
+    font-size: 12.5px;
+    text-align: center;
+
+}
+
+/*.opton_1_section_7 */
+.opton_1_section_7 {
+    background-color: #fff;
+}
+
+.opton_1_section_8 {
+    background-color: #fff;
+}
+
+.opton_1_section_9 {
+    background-color: #fff;
+}
+
+
+.opton_1_section_9 .image_area {
+    margin: 0 auto;
+    width: 235px;
+}
+
+.opton_1_section_9 .text_area {
+    max-width: 325px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.opton_1_section_9 .image_area_2 {
+    margin-top: 100px;
+    width: 320px;
+    ;
+}
+
+.opton_1_section_9 .text_area_2 {
+    margin-top: 120px;
+    margin-left: 90px;
+}
+
+/*opton_1_section_10*/
+.opton_1_section_10 {
+    background-color: #ccc;
+}
+
+.opton_1_section_10 .text_area {
+    margin: 0 auto;
+    max-width: 665px;
+}
+
+.opton_1_section_10 h2 {
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.opton_1_section_10 h4 {
+    color: #cc4435;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Be Vietnam', sans-serif;
+    margin-top: 30px;
+}
+
+.opton_1_section_10 p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 65px;
+}
+
+.opton_1_section_10 .text_area.text-center p {
+    text-align: center;
+}
+
+/*opton_1_section_11*/
+.opton_1_section_11 {
+    background: url(../images/option_1_images/socarp-developer-img.png) center left no-repeat #fff;
+    background-size: contain;
+}
+
+.opton_1_section_11 .text_area {
+    max-width: 350px;
+    margin: 50px 0;
+}
+
+.opton_1_section_11 h3 {
+    font-weight: 300;
+    color: #000;
+}
+
+.opton_1_section_11 .text_area p {
+    font-size: 12.8px;
+    color: #000;
+}
+
+/*opton_1_section_12*/
+.opton_1_section_12 {
+    background-color: #ccc;
+}
+
+.opton_1_section_12 h3 {
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 45px;
+}
+
+.opton_1_section_12 p {
+    color: #000;
+    font-size: 16px;
+}
+
+/*---------opton 1 end-----------*/
+
+/*--------opton 2 start----------*/
+.opton_2 {
+    background-color: red;
+}
+
+/*---------opton 2 end-----------*/
+
+/*--------opton 3 start----------*/
+.opton_3 {
+    background-color: orange;
+}
+
+/*---------opton 3 end-----------*/
+
+/*--------opton 4 start----------*/
+.opton_4 {
+    background-color: maroon;
+}
+
+/*---------opton 4 end-----------*/
+
+/*--------opton 5 start----------*/
+.opton_5 {
+    background-color: olive;
+}
+
+/*---------opton 5 end-----------*/
+
+/*--------opton 6 start----------*/
+.opton_6 {
+    background-color: purple;
+}
+
+/*---------opton 6 end-----------*/
+
+
+/*----------------------------
+       Footer start
+-----------------------------*/
+
+footer {
+    background-color: #fff;
+    color: #000;
+    padding-top: 20px;
+    height: 170px;
+}
+
+.next_previous_area {
+    height: 140px;
+}
+
+.next .pre_nex_text {
+    right: auto;
+    left: 20px;
+}
+
+.next_previous_area ul li {
+    display: inline-flex;
+    width: 49%;
+    position: relative;
+}
+
+.next_previous_area ul li a {
+    display: block;
+    color: #666;
+    width: 100%;
+    padding: 0 20px;
+    transition: .5s;
+}
+
+/*footer images start*/
+.footer_image {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    opacity: 0;
+}
+
+.previous .footer_image {
+    left: 290px;
+}
+
+.next .footer_image {
+    right: 290px;
+}
+
+.next_previous_area ul .previous a:hover .footer_image {
+    left: 305px;
+    opacity: 1;
+}
+
+.next_previous_area ul .next a:hover .footer_image {
+    opacity: 1;
+    right: 305px;
+}
+
+/*footer images end*/
+
+
+/*footer text start*/
+.footer_text_area {
+    font-family: 'Be Vietnam', sans-serif;
+    height: 100px;
+    width: 190px;
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+}
+
+.previous .footer_text_area {
+    margin-left: 15px;
+    float: left;
+}
+
+.next .footer_text_area {
+    margin-right: 15px;
+    float: right;
+}
+
+.footer_text_area h3 {
+    color: #6ea7f2;
+    font-size: 22.4px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 28px;
+}
+
+.next .footer_text_area h3 {
+    color: #53B470;
+}
+
+.footer_text_area p {
+    color: #000;
+}
+
+.pre_nex_text {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    font-size: 16px;
+}
+
+.footer_text_area p {
+    font-size: 11.2px;
+    font-weight: 100;
+}
+
+
+.previous {
+    position: relative;
+    display: inline-flex;
+}
+
+.next_previous_area ul .previous a:hover .footer_text_area {
+    margin-left: 0px;
+    opacity: 1;
+}
+
+.next_previous_area ul .next a:hover .footer_text_area {
+    margin-right: 0px;
+    opacity: 1;
+}
+
+/*footer text end*/
+
+.previous:after {
+    content: "";
+    height: 100px;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    right: -3px;
+    background: #333;
+}
+
+.copyright p {
+    font-size: 12.8px;
+    font-family: 'Be Vietnam', sans-serif;
+    text-align: center;
+}
+
+/*----------------------------
+       Footer end
+-----------------------------*/
+
+/*----------------------------
+       work page end
+-----------------------------*/
+
+/*----------------------------
+       Loader CSS Start
+-----------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 99999999;
+}
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: -70px;
+    margin-left: -70px;
+}
+
+/*----------------------------
+       Loader CSS End
+-----------------------------*/

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="113px" height="112px" viewBox="0 0 113 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>game-next-page-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.590823446" y="0.282691303" width="111.459091" height="110.472727" rx="30.8181818"></rect>
+        <rect id="path-3" x="0.246538928" y="0.300725798" width="15.1496712" height="15.0156034"></rect>
+        <ellipse id="path-5" cx="7.82137458" cy="7.80852746" rx="6.48713506" ry="6.42972679"></ellipse>
+        <rect id="path-7" x="0.352892371" y="0.300725798" width="15.1496712" height="15.0156034"></rect>
+        <ellipse id="path-9" cx="7.92772801" cy="7.80852746" rx="6.48713506" ry="6.42972679"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="game-next-page-icon">
+            <g id="Welcome">
+                <g id="Desktop-HD-Copy-6">
+                    <g id="Group-8" transform="translate(0.000000, 0.194119)">
+                        <g id="Game-Concept">
+                            <g id="Group-5" transform="translate(0.250209, 0.282692)">
+                                <g id="Rectangle-25-Clipped">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="path-1"></g>
+                                    <g id="Rectangle-25" mask="url(#mask-2)" stroke="#6EA7F2" stroke-width="5.13636364">
+                                        <rect id="path-1" x="0.590823446" y="0.282691303" width="111.459091" height="110.472727" rx="30.8181818"></rect>
+                                    </g>
+                                </g>
+                                <g id="Group-+-Group-+-Group-Copy-2" transform="translate(22.902139, 25.258093)">
+                                    <g id="Group" transform="translate(0.304550, 0.150929)">
+                                        <g transform="translate(0.090256, 0.056711)" stroke="#74A7F3" id="Oval-2-Copy-3" stroke-width="2.71925134">
+                                            <ellipse transform="translate(32.496973, 32.057634) scale(1, -1) translate(-32.496973, -32.057634) " cx="32.4969733" cy="32.0576337" rx="32.3149534" ry="32.0289804"></ellipse>
+                                        </g>
+                                        <g id="Group-Copy-2" transform="translate(13.149669, 17.876091)">
+                                            <g id="Oval-11-Clipped" transform="translate(24.775401, 0.000000)">
+                                                <mask id="mask-4" fill="white">
+                                                    <use xlink:href="#path-3"></use>
+                                                </mask>
+                                                <g id="Rectangle-path"></g>
+                                                <g id="Oval-11" mask="url(#mask-4)" stroke="#68A7F1" stroke-width="2.17540107">
+                                                    <g transform="translate(1.208556, 1.197861)" id="path-3">
+                                                        <ellipse cx="6.61281843" cy="6.6106665" rx="6.48713506" ry="6.42972679"></ellipse>
+                                                    </g>
+                                                </g>
+                                                <mask id="mask-6" fill="white">
+                                                    <use xlink:href="#path-5"></use>
+                                                </mask>
+                                                <g id="path-3"></g>
+                                            </g>
+                                            <path d="M26.1096405,22.7501521 C25.6384575,25.841731 22.9462408,28.2114687 19.6956004,28.2114687 C16.44496,28.2114687 13.7527433,25.841731 13.2815602,22.7501521 L26.1096405,22.7501521 L26.1096405,22.7501521 Z" id="Oval-11-Copy-2" fill="#68A7F1"></path>
+                                            <ellipse id="Oval-14" fill="#68A7F1" cx="31.9651027" cy="5.66976551" rx="2.15785805" ry="2.13876196"></ellipse>
+                                            <ellipse id="Oval-14-Copy" fill="#68A7F1" cx="34.1229608" cy="7.80852746" rx="1.37050264" ry="1.3583743"></ellipse>
+                                            <g id="Oval-11-Copy-Clipped">
+                                                <mask id="mask-8" fill="white">
+                                                    <use xlink:href="#path-7"></use>
+                                                </mask>
+                                                <g id="Rectangle-path"></g>
+                                                <g id="Oval-11-Copy" mask="url(#mask-8)" stroke="#68A7F1" stroke-width="2.17540107">
+                                                    <g transform="translate(1.208556, 1.197861)" id="path-5">
+                                                        <ellipse cx="6.71917186" cy="6.6106665" rx="6.48713506" ry="6.42972679"></ellipse>
+                                                    </g>
+                                                </g>
+                                                <mask id="mask-10" fill="white">
+                                                    <use xlink:href="#path-9"></use>
+                                                </mask>
+                                                <g id="path-5"></g>
+                                            </g>
+                                            <ellipse id="Oval-14-Copy-3" fill="#68A7F1" cx="7.29605511" cy="5.66976551" rx="2.15785805" ry="2.13876196"></ellipse>
+                                            <ellipse id="Oval-14-Copy-2" fill="#68A7F1" cx="9.45391314" cy="7.80852746" rx="1.37050264" ry="1.3583743"></ellipse>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
