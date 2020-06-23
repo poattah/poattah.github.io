@@ -93,7 +93,21 @@
         <!--Hero Area end-->
     </div>
     
-  <!-- Load Facebook SDK for JavaScript -->
+ 
+    <!--popper min js-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--Bootstrap min js-->
+    <script src="assets/js/bootstrap.min-v4.0.0.js"></script>
+    <!--Main js-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script>
+        gsap.from('.hero_header',{duration: 1, delay: 0.5, y: 30, opacity: 0, ease: Power4.easeOut})
+        gsap.from('.hero_text',{duration: 1, delay: 0.8, y: 30, opacity: 0, ease: Power4.easeOut})
+        gsap.from('.custom_btn',{duration: 1, delay: 1, y: 30, opacity: 0, ease: Bounce.easeOut, stagger: .6})
+    </script>
+
+     <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script>
     (function(d, s, id) {
@@ -110,18 +124,6 @@
 	<!-- Your customer chat code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="265813410731015" theme_color="#079cff" logged_in_greeting="Hi! Welcome to my site, how can I help you?" logged_out_greeting="Thanks for visiting my website. Kindly reach out to me later for any questions">
     </div>
-    <!--popper min js-->
-    <script src="assets/js/popper.min.js"></script>
-    <!--Bootstrap min js-->
-    <script src="assets/js/bootstrap.min-v4.0.0.js"></script>
-    <!--Main js-->
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-    <script>
-        gsap.from('.hero_header',{duration: 1, delay: 0.5, y: 30, opacity: 0, ease: Power4.easeOut})
-        gsap.from('.hero_text',{duration: 1, delay: 0.8, y: 30, opacity: 0, ease: Power4.easeOut})
-        gsap.from('.custom_btn',{duration: 1, delay: 1, y: 30, opacity: 0, ease: Bounce.easeOut, stagger: .6})
-    </script>
 </body>
 
 </html>
