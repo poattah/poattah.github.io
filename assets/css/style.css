@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prompt:wght@600;700&display=swap');
+@import url("https://use.typekit.net/qjo7hlp.css");
+
+
+:root{
+    --primary-color: #051a32;
+    --secondary-color: #838F9C;
+    --main-color: #1363f5;
+    --second-color: #DE3256;
+    --gray-color: #D7DBE0;
+    --Light-gray-color: #F2F3F5;
+}
 
 /*
 font-family: 'Nunito', sans-serif;
@@ -6,12 +17,37 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Source Code Pro', monospace;
 font-family: 'Be Vietnam', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: roc-grotesk, sans-serif;
  */
 
 */ html,
 body {
     height: 100%;
     padding: 0px;
+}
+
+#background_map {
+background:
+linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+linear-gradient(-90deg, #aaa 1px, transparent 1px),
+linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+linear-gradient(#aaa 1px, transparent 1px),
+#f2f2f2;
+background-size:
+4px 4px,
+4px 4px,
+80px 80px,
+80px 80px,
+80px 80px,
+80px 80px,
+80px 80px,
+80px 80px;
 }
 
 a:focus {
@@ -30,11 +66,31 @@ img {
     height: auto;
 }
 
-h1,
+h1{
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600; 
+    font-size: 45px;
+    margin-bottom: 1.5rem;
+}
+
+h5{
+    font-family: roc-grotesk, sans-serif;
+    color: var(--second-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* .overide-1 {
+    margin: 0px 0px 0px;
+    padding: 0px 0px;
+    max-width: 60%;
+} */
+
 h2,
 h3,
 h4,
-h5,
 h6 {
     margin: 0 0 15px;
     font-weight: 600;
@@ -44,7 +100,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     font-weight: normal;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     background-color: #fff;
 }
@@ -54,7 +110,7 @@ input,
 button,
 select,
 textarea {
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 a:hover {
@@ -103,12 +159,13 @@ p {
 }
 
 .section_title h2 {
-    font-size: 16px;
+    font-family: roc-grotesk, sans-serif;
     text-transform: capitalize;
     margin: 0 auto;
     margin-bottom: 30px;
-    color: #000;
-    font-weight: 400;
+    color: #051A32;
+    font-size: 40px;
+    
 }
 
 .section_title p {
@@ -205,7 +262,7 @@ p {
 
 .hero_area {
     min-height: 100vh;
-    color: #000;
+    color: #051A32;
     position: relative;
     padding-top: 100px;
     padding-bottom: 30px;
@@ -221,26 +278,37 @@ p {
     font-size: 18px;
     max-width: 550px;
     margin: 0 auto;
+    color: var(--secondary-color);
 }
+
+.hero_header h1 {
+    padding-bottom: 2vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: roc-grotesk, sans-serif;
+
+}
+
 
 .hero_button {
     margin-top: 10px;
 }
 
 .custom_btn {
-    color: #000;
-    border: 2px solid #000;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     display: inline-block;
     padding: 8px 20px;
     margin: 15px;
     border-radius: 20px;
     transition: .5s;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .custom_btn:hover {
     color: #fff;
-    background-color: #000;
+    background-color: var(--primary-color);
 }
 
 /*----------------------------
@@ -254,7 +322,7 @@ p {
 -----------------------------*/
 
 .side_menu {
-    background-color: #fff;
+    background-color: transparent;
     width: auto;
     height: 100vh;
     top: 0;
@@ -316,15 +384,15 @@ p {
 }
 
 .side_menu ul li a.menu_item_1.active {
-    color: #006CFA;
+    color: var(--main-color);
 }
 
 .side_menu ul li a.menu_item_2.active {
-    color: #006CFA;
+    color: var(--main-color);
 }
 
 .side_menu ul li a.menu_item_3.active {
-    color: #006CFA;
+    color: var(--main-color);
 }
 
 
@@ -351,7 +419,7 @@ p {
 }
 
 .side_menu ul li a:hover span {
-    background-color: #000;
+    background-color: var(--primary-color);
 }
 
 .side_menu_on {
@@ -390,7 +458,7 @@ p {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #000;
+    background-color: var(--primary-color);
     transition: .3s;
 }
 
@@ -439,15 +507,14 @@ p {
 }
 
 .about_text p {
-    color: #000;
+    color: var(--primary-color);
     margin-bottom: 20px;
-    font-size: 13.6px;
-    font-family: 'Be Vietnam', sans-serif;
-    line-height: normal;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
     vertical-align: baseline;
-    letter-spacing: normal;
-    word-spacing: -1px;
     text-align: justify;
+    letter-spacing: normal;
+    
 }
 
 .social_icons {
@@ -461,7 +528,7 @@ p {
 
 .social_icons ul li a {
     display: inline-block;
-    background-color: #000;
+    background-color: var(--primary-color);
     color: #fff;
     font-size: 22px;
     height: 40px;
@@ -474,7 +541,7 @@ p {
 }
 
 .social_icons ul li a:hover {
-    color: #000;
+    color: var(--primary-color);
     background-color: #ccc;
 }
 
@@ -493,6 +560,12 @@ p {
 /*----------------------------
         work page Start
 -----------------------------*/
+
+.side {
+    display: flex;
+    align-self: end;
+    justify-content: end;
+}
 
 .work .section_title,
 .work .section_title h2 {
@@ -516,7 +589,7 @@ p {
 }
 
 .work_menu li {
-    color: #000;
+    color: var(--primary-color);
     display: inline-block;
     padding: 5px 15px;
     cursor: pointer;
@@ -532,7 +605,7 @@ p {
 }
 
 .work_menu li.active {
-    color: #006CFA;
+    color: var(--main-color);
 }
 
 .work_menu li.active:after {
@@ -601,7 +674,7 @@ p {
     bottom: 0;
     left: -300px;
     transition: .5s;
-    color: #000;
+    color: var(--primary-color);
     font-size: 12px;
     display: block;
     text-align: center;
@@ -705,7 +778,7 @@ p {
 /*--------opton 1 start----------*/
 
 .bg_img_1 {
-    background-image: url(../images/option_1_images/socarp-header-img.jpg);
+    background-image: url(https://media.wired.com/photos/59323c5fb8eb31692072e46e/191:100/pass/454092414_master.jpg);
 }
 
 .option_section_padding {
@@ -713,23 +786,23 @@ p {
 }
 
 .single_option h2 {
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .single_option h3 {
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 25.6px;
-    color: #000;
+    color: var(--primary-color);
     font-weight: 100;
 }
 
 .single_option p {
-    color: #000;
+    color: var(--primary-color);
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 20px;
     text-align: justify;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .single_option .header {
@@ -746,7 +819,7 @@ p {
 
 .single_option .header .text_area h2,
 .single_option .header .text_area h3 {
-        font-family: 'Be Vietnam', sans-serif;
+        font-family: 'Inter', sans-serif;
     margin: 0;
 }
 
@@ -771,7 +844,7 @@ p {
 }
 
 .top_to_bottom {
-    border: 1px solid #000;
+    border: 1px solid var(--primary-color);
     height: 32px;
     width: 20px;
     border-radius: 10px;
@@ -782,7 +855,7 @@ p {
 
 .top_to_bottom a {
     display: block;
-    color: #000;
+    color: var(--primary-color);
     font-size: 20px;
     line-height: 30px;
     margin-top: -14px;
@@ -798,7 +871,7 @@ p {
 }
 
 .top_to_bottom span {
-    background-color: #000;
+    background-color: var(--primary-color);
     height: 10px;
     width: 10px;
     display: block;
@@ -810,7 +883,7 @@ p {
 
 .opton_1_section_1 {
     min-height: 100vh;
-    background-color: #ECECEC;
+    background-color: #fff;
 }
 
 .option_section_title h2 {
@@ -823,9 +896,9 @@ p {
 }
 
 .opton_1_section_1 p {
-    color: #000;
-    font-size: 16px;
-    line-height: 28.8px;
+    color: var(--primary-color);
+    font-size: 14px;
+    line-height: 25px;
 }
 
 .opton_1_section_1 .two_section {
@@ -833,7 +906,7 @@ p {
 }
 
 .opton_1_section_1 .two_section h3 {
-    color: #000;
+    color: var(--primary-color);
 }
 
 .opton_1_section_1 .two_section p {
@@ -892,7 +965,7 @@ p {
     display: block;
     color: #cc4435;
     font-size: 12.4;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 24px;
     padding-bottom: 20px;
     padding-top: 10px;
@@ -953,7 +1026,7 @@ p {
 }
 
 .opton_1_section_5 .bottom_area p {
-    color: #000;
+    color: var(--primary-color);
 
 }
 
@@ -999,7 +1072,7 @@ p {
 .single_phone_box .text_area h4 {
     color: #212934;
     font-size: 12px;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     margin-bottom: 5px;
 }
@@ -1057,7 +1130,7 @@ p {
 }
 
 .opton_1_section_10 h2 {
-    color: #000;
+    color: var(--primary-color);
     font-weight: 300;
     margin-bottom: 70px;
 }
@@ -1066,13 +1139,13 @@ p {
     color: #cc4435;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-top: 30px;
 }
 
 .opton_1_section_10 p {
     font-size: 16px;
-    color: #000;
+    color: var(--primary-color);
     margin-bottom: 65px;
 }
 
@@ -1093,12 +1166,12 @@ p {
 
 .opton_1_section_11 h3 {
     font-weight: 300;
-    color: #000;
+    color: var(--primary-color);
 }
 
 .opton_1_section_11 .text_area p {
     font-size: 12.8px;
-    color: #000;
+    color: var(--primary-color);
 }
 
 /*opton_1_section_12*/
@@ -1108,12 +1181,12 @@ p {
 
 .opton_1_section_12 h3 {
     font-weight: 300;
-    color: #000;
+    color: var(--primary-color);
     margin-bottom: 45px;
 }
 
 .opton_1_section_12 p {
-    color: #000;
+    color: var(--primary-color);
     font-size: 16px;
 }
 
@@ -1161,7 +1234,7 @@ p {
 
 footer {
     background-color: #fff;
-    color: #000;
+    color: var(--primary-color);
     padding-top: 20px;
     height: 170px;
 }
@@ -1221,7 +1294,7 @@ footer {
 
 /*footer text start*/
 .footer_text_area {
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
     height: 100px;
     width: 190px;
     text-align: center;
@@ -1252,7 +1325,7 @@ footer {
 }
 
 .footer_text_area p {
-    color: #000;
+    color: var(--primary-color);
 }
 
 .pre_nex_text {
@@ -1297,7 +1370,7 @@ footer {
 
 .copyright p {
     font-size: 12.8px;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 
@@ -1319,7 +1392,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: var(--primary-color);
     z-index: 99999999;
 }
 
@@ -1336,3 +1409,13 @@ footer {
 /*----------------------------
        Loader CSS End
 -----------------------------*/
+
+/*----------------------------
+       Media Query
+-----------------------------*/
+
+/* @media screen and (max-width: 480px) {
+    .work_menu {
+        display: none;
+    }
+} */

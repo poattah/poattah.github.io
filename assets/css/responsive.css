@@ -267,6 +267,7 @@
 
     .work_menu li {
         margin-bottom: 10px;
+        display: none;
     }
 
     .opton_1_section_4_bg {
